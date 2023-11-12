@@ -9,6 +9,7 @@ note.txt
 # testing
 /coverage
 
+.env
 # production
 /build
 
