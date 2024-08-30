@@ -16,7 +16,7 @@ const HumanResource = () => {
   const text = 'Human Resource Outsourcing';
 
   return (
-    <Fragment>
+    <>
       <MetaTags>
         <title>Human Resources: Kovad Ceramics</title>
         <meta
@@ -67,10 +67,10 @@ const HumanResource = () => {
           <Assessment id={'pink-shade'} />
         </section>
 
-        <Form1 />
+        <Form1 contact="" />
       </main>
       <Footer />
-    </Fragment>
+    </>
   );
 };
 

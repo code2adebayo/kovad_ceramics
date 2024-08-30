@@ -8,7 +8,7 @@ import Footer from '../footer/Footer';
 const About = () => {
   const text = 'About Kovad Ceramics';
   return (
-    <Fragment>
+    <>
       {/* indexing */}
       <MetaTags>
         <title>About Kovad Ceramics: Kovad Ceramics</title>
@@ -27,7 +27,7 @@ const About = () => {
       <HeaderGeneral image={about} text={text} />
       <BodyAbout />
       <Footer />
-    </Fragment>
+    </>
   );
 };
 

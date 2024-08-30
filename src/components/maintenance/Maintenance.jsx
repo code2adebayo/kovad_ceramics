@@ -12,7 +12,7 @@ const Maintenance = () => {
   const { message, centerDiv } = style;
 
   return (
-    <React.Fragment>
+    <>
       <MetaTags>
         <title>Maintenance : Kovad Ceramics</title>
         <meta
@@ -49,7 +49,7 @@ const Maintenance = () => {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

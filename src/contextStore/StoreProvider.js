@@ -24,7 +24,7 @@ export class StoreProvider extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <>
         {/* value prop is where we define what values 
              that are accessible to consumer components */}
         <StoreContext.Provider
@@ -34,7 +34,7 @@ export class StoreProvider extends Component {
         >
           {this.props.children}
         </StoreContext.Provider>
-      </React.Fragment>
+      </>
     );
   }
 }

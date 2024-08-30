@@ -2,8 +2,8 @@ import React, { Fragment } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-router-dom';
 import MdTime from 'react-ionicons/lib/MdTime';
-// import logo from '../../assets/logo.png';
-import logo from '../../assets/kovad.png';
+import logo from '../../assets/logo_white.png';
+// import logo from '../../assets/kovad.png';
 
 import phone from '../../assets/phone.svg';
 import kovad from '../../assets/kovad.png';
@@ -13,20 +13,21 @@ import location from '../../assets/location.svg';
 import './footer.css';
 
 const Footer = () => (
-  <Fragment>
+  <>
     <Fade bottom>
       <footer>
         <div className="footer-container">
           <div className="footer footer-services">
             <h4>Services</h4>
-            <Link to="/human-resource-outsourcing" className="white-link">
-              <h6>Human Resource Outsourcing</h6>
+
+            <Link to="/services-installation" className="white-link">
+              <h6>Installation</h6>
             </Link>
-            <Link to="/logistics" className="white-link">
-              <h6>Logistic and Haulage Outsourcing</h6>
+            <Link to="/services-maintenance" className="white-link">
+              <h6>Maintenance</h6>
             </Link>
-            <Link to="/callcenter-solution" className="white-link">
-              <h6>Call Center Solutions</h6>
+            <Link to="/services-repair" className="white-link">
+              <h6>Repair</h6>
             </Link>
           </div>
 
@@ -55,7 +56,7 @@ const Footer = () => (
             </div>
             <div className="contact-location">
               <img src={phone} alt="phone icon" />
-              <h6 href="tel:234-802-312-3876">07050698626</h6>
+              <h6 href="tel:234-703-484-9938">07034849938</h6>
             </div>
             <div className="contact-location">
               <img src={mail} alt="mail icon" />
@@ -118,7 +119,7 @@ const Footer = () => (
         </div>
       </footer>
     </Fade>
-  </Fragment>
+  </>
 );
 
 export default Footer;

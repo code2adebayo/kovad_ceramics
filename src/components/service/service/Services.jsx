@@ -2,12 +2,22 @@ import React, { Fragment } from 'react';
 import Fade from 'react-reveal/Fade';
 import Form1 from '../../forms/Form1';
 import MetaTags from 'react-meta-tags';
-import fleet from '../../../assets/fleet.png';
-import courier from '../../../assets/courier.png';
-import drivers from '../../../assets/drivers.png';
+// import fleet from '../../../assets/fleet.png';
+import fleet from '../../../assets/tiler-installing-ceramic-tiles-on.jpg';
+
+// import courier from '../../../assets/courier.png';
+import courier from '../../../assets/hands-rubber-gloves-wash-marble.jpg';
+
+// import drivers from '../../../assets/drivers.png';
+import drivers from '../../../assets/installation-marble-slabs-on-building.jpeg';
+
 import importation from '../../../assets/importation.png';
 import HeaderGeneral from '../../header/HeaderGeneral';
-import bannerImage from '../../../assets/services.png';
+// import bannerImage from '../../../assets/man-cleaning-floor-machine-260nw-418480936.jpg';
+import bannerImage from '../../../assets/marble_installer.jpeg';
+
+// import bannerImage from '../../../assets/services.png';
+
 import ServiceCard from '../ServiceCard';
 import Footer from '../../footer/Footer';
 import '../service.css';
@@ -16,7 +26,7 @@ const Services = () => {
   const text = 'Services';
 
   return (
-    <Fragment>
+    <>
       {/* Metatags  brief explain of  Services for google bots */}
       <MetaTags>
         <title>
@@ -46,8 +56,8 @@ const Services = () => {
             <div className="service-text">
               <p>
                 We are a wholly owned indigenous company incorporated in Nigeria
-                to offer installation, maintenance and repair works on ceramics
-                tiles and marbles.
+                to offer sales, installation, maintenance and repair works on
+                ceramics tiles and marbles.
                 <br /> <br /> As an innovative and service driven corporate
                 entity, Kovad Ceramics understand the value of expertise,
                 specialty and has continuously upheld them. We also place great
@@ -63,16 +73,28 @@ const Services = () => {
 
         <section className="services">
           <div className="service-cards-container">
-            <ServiceCard image={fleet} title={'INSTALLATION SERVICE TEAM'} />
-            <ServiceCard image={courier} title={'MAINTENANCE SERVICE TEAM'} />
-            <ServiceCard image={drivers} title={'REPAIR SERVICE TEAM'} />
+            <ServiceCard
+              image={fleet}
+              title={'INSTALLATION SERVICE TEAM'}
+              slug="/services-installation"
+            />
+            <ServiceCard
+              image={courier}
+              title={'MAINTENANCE SERVICE TEAM'}
+              slug="/services-maintenance"
+            />
+            <ServiceCard
+              image={drivers}
+              title={'REPAIR SERVICE TEAM'}
+              slug="/services-repair"
+            />
           </div>
         </section>
 
-        <Form1 />
+        <Form1 contact="contact" />
       </main>
       <Footer />
-    </Fragment>
+    </>
   );
 };
 

@@ -22,7 +22,7 @@ const CallCenter = () => {
   const text = 'Call Center Solutions';
 
   return (
-    <Fragment>
+    <>
       <MetaTags>
         <title>Call Center: Kovad Ceramics</title>
         <meta
@@ -78,11 +78,11 @@ const CallCenter = () => {
           </div>
         </section>
 
-        <Form1 />
+        <Form1 contact="" />
       </main>
 
       <Footer />
-    </Fragment>
+    </>
   );
 };
 

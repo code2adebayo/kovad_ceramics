@@ -24,7 +24,7 @@ const BodyContact = () => (
           <div className="contact-image-container">
             <img src={phone} alt="phone icon" style={{ color: 'blue' }} />
           </div>
-          <h6 href="tel:234-802-312-3876">07050698626</h6>
+          <h6 href="tel:234-807-467-9938">07034849938</h6>
         </div>
         <div className="contact-item">
           <div className="contact-image-container">

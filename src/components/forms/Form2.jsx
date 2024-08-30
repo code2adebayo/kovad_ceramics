@@ -91,7 +91,7 @@ const Form2 = () => {
   }, []);
 
   return (
-    <Fragment>
+    <>
       <div className="form2-container">
         <div className="form2-inner-container">
           <form id="form2-contact" onSubmit={handleSubmit}>
@@ -123,7 +123,7 @@ const Form2 = () => {
                 <input
                   placeholder="Message title"
                   type="text"
-                  value={name}
+                  value={title}
                   onChange={(e) => setTitle(e.target.value)}
                   required
                 />
@@ -145,7 +145,7 @@ const Form2 = () => {
           </form>
         </div>
       </div>
-    </Fragment>
+    </>
   );
 };
 

@@ -15,7 +15,7 @@ const OtherServices = () => {
   const text = 'Other Business Services';
 
   return (
-    <Fragment>
+    <>
       <MetaTags>
         <title>Other Business Services: Kovad Ceramics</title>
         <meta
@@ -50,11 +50,11 @@ const OtherServices = () => {
           </div>
         </section>
 
-        <Form1 />
+        <Form1 contact="" />
       </main>
 
       <Footer />
-    </Fragment>
+    </>
   );
 };
 

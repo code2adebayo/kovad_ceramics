@@ -11,14 +11,11 @@
 // // import CallCenter from './components/service/callcenter/CallCenter';
 // import CallCenter from '../components/service/callcenter/CallCenter';
 
-
-
-
 // class OnboardRoute extends Component {
 
 //     render() {
 //         return (
-//             <React.Fragment>
+//             <>
 //                 <div className="content">
 //                     <Switch>
 //                         <Route path="/about" component={About} />
@@ -32,7 +29,7 @@
 //                     </Switch>
 
 //                 </div>
-//             </React.Fragment>
+//             </>
 //         );
 //     }
 // }

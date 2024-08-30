@@ -1,13 +1,9 @@
-
-
-
 @media (min-width: 768px) {
   .notFound-footer {
     position: absolute;
-      bottom: 0;
+    bottom: 0;
   }
 }
-
 
 .message {
   border: 2px #ec4125 solid;
@@ -24,9 +20,9 @@
   }
 }
 
-
-
-.centerDiv {display: flex;
+.centerDiv {
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;}
+  height: 100%;
+}

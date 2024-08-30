@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import MetaTags from 'react-meta-tags';
 
 const NotFound = () => (
-  <Fragment>
+  <>
     <MetaTags>
       <title>404 Error Page</title>
       <meta
@@ -18,7 +18,7 @@ const NotFound = () => (
     <div className="container">
       <h2 className="text-center pt-4">404 Not found Page</h2>
     </div>
-  </Fragment>
+  </>
 );
 
 export default NotFound;

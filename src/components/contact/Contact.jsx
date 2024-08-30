@@ -8,7 +8,7 @@ import Footer from '../footer/Footer';
 const Contact = () => {
   const text = 'Contact Us';
   return (
-    <Fragment>
+    <>
       <MetaTags>
         <title>Contact: Kovad Ceramics</title>
         <meta
@@ -25,7 +25,7 @@ const Contact = () => {
       <HeaderGeneral image={contact} text={text} />
       <BodyContact />
       <Footer />
-    </Fragment>
+    </>
   );
 };
 

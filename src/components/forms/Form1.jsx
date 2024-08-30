@@ -1,7 +1,7 @@
-import React, { Fragment, useState, useEffect } from 'react';
-import MdTime from 'react-ionicons/lib/MdTime';
-import Fade from 'react-reveal/Fade';
+import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
+import Fade from 'react-reveal/Fade';
+import MdTime from 'react-ionicons/lib/MdTime';
 // import ReCAPTCHA from "react-google-recaptcha";
 import EnquiryService from '../httpService/EnquiryService';
 import mail from '../../assets/mail.svg';
@@ -11,7 +11,7 @@ import './form1.css';
 
 const enquiryService = new EnquiryService();
 
-const Form1 = () => {
+const Form1 = ({ contact }) => {
   let _isMounted = false;
   const [error, setError] = useState(null);
   const [name, setName] = useState('');
@@ -86,8 +86,8 @@ const Form1 = () => {
 
   console.warn('_isMounted', _isMounted);
   return (
-    <Fragment>
-      <section className="quick-contact-1">
+    <>
+      <section className="quick-contact-1" id={contact}>
         <h3 className="section-title">Quick Contact</h3>
         <Fade bottom>
           <div className="quick-contact-container">
@@ -102,7 +102,7 @@ const Form1 = () => {
               </div>
               <div className="contact-location">
                 <img src={phone} alt="location icon" />
-                <p href="tel:234-802-312-3876">07050698626</p>
+                <p href="tel:234-703-484-9938">07034849938</p>
               </div>
               <div className="contact-location">
                 <img src={mail} alt="location icon" />
@@ -143,7 +143,7 @@ const Form1 = () => {
                         <input
                           placeholder="Message title"
                           type="text"
-                          value={name}
+                          value={title}
                           onChange={(e) => setTitle(e.target.value)}
                           required
                         />
@@ -176,7 +176,7 @@ const Form1 = () => {
           </div>
         </Fade>
       </section>
-    </Fragment>
+    </>
   );
 };
 

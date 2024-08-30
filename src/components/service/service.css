@@ -1,3 +1,7 @@
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
 .services {
   display: flex;
   justify-content: center;
@@ -9,6 +13,10 @@
   grid-template-columns: 420px 420px;
   grid-template-rows: 1fr;
   gap: 2vw;
+}
+
+.service-cards-container.service-cards-container-quad {
+  grid-template-columns: 320px 320px 320px 320px !important;
 }
 
 .service-text {
@@ -27,6 +35,11 @@
   cursor: pointer;
 }
 
+.service-card.product-cards {
+  border-radius: 1rem !important;
+  border: 0.5px solid #ec4025f8 !important;
+}
+
 .service-card:hover {
   transform: scale(1.05);
 }
@@ -37,6 +50,12 @@
 
 .service-card-image img {
   width: 100%;
+}
+
+.service-card h3 {
+  /* font-size: 15px; */
+  padding: 30px 0;
+  text-align: center;
 }
 
 .service-card h4 {
@@ -73,10 +92,14 @@
     flex-direction: column;
     max-width: 450px;
   }
-  
+
   .service-card {
     margin-bottom: 30px;
+  }
 
+  .service-card h3 {
+    /* font-size: 15px; */
+    padding: 20px 0;
   }
 
   .service-card h4 {
@@ -90,4 +113,19 @@
   }
 }
 
+.btn-more-products:active {
+  color: #fff !important;
+  background-color: #ec4025f8 !important;
+  border-color: #ec4025f8 !important;
+}
 
+.btn-more-products:hover {
+  color: #fff !important;
+  background-color: #ec4025f8 !important;
+  border-color: #ec4025f8 !important;
+}
+
+.btn-more-products {
+  color: #ec4025f8 !important;
+  border-color: #ec4025f8 !important;
+}

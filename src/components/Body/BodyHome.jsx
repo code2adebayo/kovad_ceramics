@@ -6,13 +6,13 @@ import tiles from '../../assets/tiles.png';
 import maintenance_2 from '../../assets/maintenance_2.png';
 import fleet from '../../assets/fleet.png';
 import './bodyhome.css';
-import Form1 from '../forms/Form1';
 import ConnectedEnterprise from '../connectedEnterprise/ConnectedEnterprise';
 import Assessment from '../assessment/Assessment';
 import Fade from 'react-reveal/Fade';
+import Form1 from '../forms/Form1';
 
 const BodyHome = () => (
-  <Fragment>
+  <>
     <main className="body-home">
       <section>
         <div className="d-flex justify-content-center pt-4">
@@ -30,7 +30,10 @@ const BodyHome = () => (
               <p>Wholesales & Retails of Marbles</p>
 
               <div className="learn-more">
-                <Link to="/sales-marbles">
+                <Link
+                  to="/products-rustic_porcelain_tile"
+                  className="text-decoration-none"
+                >
                   <i className="fa fa-long-arrow-right" />
                   <p className="excellent-red">Learn more</p>
                 </Link>
@@ -48,7 +51,10 @@ const BodyHome = () => (
               <p>Wholesales & Retails of Ceramic Tiles</p>
 
               <div className="learn-more">
-                <Link to="/sales-tiles">
+                <Link
+                  to="/products-glazed_porcelain_tile"
+                  className="text-decoration-none"
+                >
                   <i className="fa fa-long-arrow-right" />
                   <p className="excellent-red">Learn more</p>
                 </Link>
@@ -66,7 +72,10 @@ const BodyHome = () => (
               <p>Maintenance & Housekeeping of Tiles & Marbles</p>
 
               <div className="learn-more" id="three">
-                <Link to="/maintenance">
+                <Link
+                  to="/services-maintenance"
+                  className="text-decoration-none"
+                >
                   <i className="fa fa-long-arrow-right" />
                   <p className="excellent-red">Learn more</p>
                 </Link>
@@ -75,7 +84,7 @@ const BodyHome = () => (
           </Fade>
         </div>
         <span className="see-more">
-          <Link to="/logistics">
+          <Link to="/services" className="text-decoration-none">
             <button className="see-more-btn">See More</button>
           </Link>
         </span>
@@ -109,9 +118,9 @@ const BodyHome = () => (
         </section>
       </Fade> */}
 
-      <Form1 />
+      <Form1 contact="" />
     </main>
-  </Fragment>
+  </>
 );
 
 export default BodyHome;

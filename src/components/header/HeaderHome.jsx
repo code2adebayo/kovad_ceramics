@@ -7,12 +7,12 @@ import Slide from '../slide/Slide';
 import './headerhome.css';
 
 const HeaderHome = () => (
-  <Fragment>
+  <>
     <header className="header-home">
       <Slide />
       <Navbar />
     </header>
-  </Fragment>
+  </>
 );
 
 export default HeaderHome;

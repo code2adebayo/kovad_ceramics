@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "expect": "^29.0.0",
+    "@jest/expect-utils": "^29.7.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -12,18 +12,22 @@
     "bootstrap": "^4.4.1",
     "buffer": "^6.0.3",
     "cross-env": "^6.0.3",
+    "diff-sequences": "^29.6.3",
+    "expect": "^29.0.0",
     "font-awesome": "^4.7.0",
     "jest-util": "^29.0.0",
     "path-browserify": "^1.0.1",
     "popper.js": "^1.16.1",
+    "pretty-format": "^29.7.0",
     "prop-types": "^15.7.2",
     "querystring-es3": "^0.2.1",
     "react": "^18.2.0",
     "react-bootstrap": "1.0.0-beta.17",
-    "react-dom": "^18.2.0",
+    "react-dom": "^18.3.1",
     "react-google-recaptcha": "^3.1.0",
     "react-icons": "^3.10.0",
     "react-ionicons": "^3.1.4",
+    "react-is": "^18.0.0",
     "react-meta-tags": "^0.7.4",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.1.2",
@@ -31,21 +35,18 @@
     "react-scroll-up": "^1.3.3",
     "react-slick": "^0.25.2",
     "react-toastify": "^6.0.0-rc.2-1",
-    "stream-browserify": "^3.0.0",
-    "@jest/expect-utils": "^29.7.0",
     "regenerator-runtime": "^0.14.0",
+    "stream-browserify": "^3.0.0",
     "util": "^0.12.5",
-    "web-vitals": "^2.1.4",
-    "diff-sequences": "^29.6.3",
-    "pretty-format": "^29.7.0",
-    "react-is": "^18.0.0"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "GENERATE_SOURCEMAP=false react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build-prd": "cross-env GENERATE_SOURCEMAP=false react-scripts build"
+    "build-prd": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
+    "format": "prettier --write ."
   },
   "engines": {
     "npm": "9.x",
@@ -70,6 +71,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "react-snap": "1.10.0"
   }
 }

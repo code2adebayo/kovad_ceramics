@@ -7,7 +7,7 @@ class Home extends Component {
   render() {
     const { excellentColor } = homeCss;
     return (
-      <React.Fragment>
+      <>
         {/* indexing */}
         <MetaTags>
           <title>Kovad Ceramics: Business Process Outsourcing</title>
@@ -27,7 +27,7 @@ class Home extends Component {
           <a href="/about-us">About uS</a>
           <Link to="/about-us">About Us</Link>
         </div>
-      </React.Fragment>
+      </>
     );
   }
 }

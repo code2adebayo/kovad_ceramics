@@ -15,7 +15,7 @@ const Navbar = () => {
   const { width } = useWindowDimensions();
 
   return (
-    <Fragment>
+    <>
       <nav className="flex">
         <div className="nav-brand">
           <Link to="/">
@@ -62,23 +62,23 @@ const Navbar = () => {
           <li className="nav-item nested-nav-container">
             <NavLink
               exact
-              to="/service"
+              to="/services"
               activeClassName="selected"
               className="nav-link"
             >
               Services
             </NavLink>
             <ul className="sub-nav">
-              <Link to="/service" className="excellent-red">
+              <Link to="/services" className="excellent-red">
                 <li>Installation, Maintenance & Repair</li>
               </Link>
-              <Link to="/service-installation" className="excellent-red">
+              <Link to="/services-installation" className="excellent-red">
                 <li>Installation</li>
               </Link>
-              <Link to="/servic-maintenancee" className="excellent-red">
+              <Link to="/services-maintenance" className="excellent-red">
                 <li>Maintenance</li>
               </Link>
-              <Link to="/service-repair" className="excellent-red">
+              <Link to="/services-repair" className="excellent-red">
                 <li>Repair</li>
               </Link>
             </ul>
@@ -93,11 +93,17 @@ const Navbar = () => {
               Products
             </NavLink>
             <ul className="sub-nav">
-              <Link to="/products-ceramics" className="excellent-red">
-                <li>Ceramics</li>
+              <Link
+                to="/products-glazed_porcelain_tile"
+                className="excellent-red"
+              >
+                <li>Glazed Porcelain Tile</li>
               </Link>
-              <Link to="/products-tiles" className="excellent-red">
-                <li>Tiles</li>
+              <Link
+                to="/products-rustic_porcelain_tile"
+                className="excellent-red"
+              >
+                <li>Rustic Porcelain Tile</li>
               </Link>
             </ul>
           </li>
@@ -123,7 +129,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-    </Fragment>
+    </>
   );
 };
 

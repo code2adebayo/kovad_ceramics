@@ -1,4 +1,3 @@
-
 .form2-container {
   width: 35rem;
   background: #000;
@@ -15,12 +14,12 @@
   padding: 20px 10px;
 }
 
-#form2-contact input[type="text"],
-#form2-contact input[type="email"],
-#form2-contact input[type="tel"],
+#form2-contact input[type='text'],
+#form2-contact input[type='email'],
+#form2-contact input[type='tel'],
 #form2-contact textarea,
-#form2-contact button[type="submit"] {
-  font: 400 15px "Nunito", Helvetica, Arial, sans-serif;
+#form2-contact button[type='submit'] {
+  font: 400 15px 'Nunito', Helvetica, Arial, sans-serif;
 }
 
 #form2-contact {
@@ -44,20 +43,20 @@ fieldset {
   width: 100%;
 }
 
-#form2-contact input[type="text"],
-#form2-contact input[type="email"],
-#form2-contact input[type="tel"],
+#form2-contact input[type='text'],
+#form2-contact input[type='email'],
+#form2-contact input[type='tel'],
 #form2-contact textarea {
   width: 100%;
   border: 1px solid #ccc;
-  background: #F1F0F0;
+  background: #f1f0f0;
   margin: 0 0 5px;
   padding: 10px;
   color: #ec4125;
 }
 
-#form2-contact input[type="text"]:hover,
-#form2-contact input[type="email"]:hover,
+#form2-contact input[type='text']:hover,
+#form2-contact input[type='email']:hover,
 #form2-contact textarea:hover {
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
@@ -71,12 +70,12 @@ fieldset {
   resize: none;
 }
 
-#form2-contact button[type="submit"] {
+#form2-contact button[type='submit'] {
   cursor: pointer;
   width: 45%;
   border: none;
   background: #ec4125;
-  color: #FFF;
+  color: #fff;
   border: 2px solid #ec4125;
   border-radius: 5px;
   margin: 4rem 0 5px;
@@ -84,15 +83,15 @@ fieldset {
   font-size: 15px;
 }
 
-#form2-contact button[type="submit"]:hover {
+#form2-contact button[type='submit']:hover {
   color: #ec4125;
-  background: #FFF;
+  background: #fff;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
 
-#form2-contact button[type="submit"]:active {
+#form2-contact button[type='submit']:active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -124,7 +123,7 @@ fieldset {
   }
 }
 
-@media screen and (max-width: 850px) { 
+@media screen and (max-width: 850px) {
   .form2-container {
     width: 75vw;
   }
@@ -142,7 +141,7 @@ fieldset {
     font-size: 17px;
   }
 
-  #form2-contact button[type="submit"] {
+  #form2-contact button[type='submit'] {
     width: 100%;
   }
 }

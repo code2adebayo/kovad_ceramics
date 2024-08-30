@@ -5,7 +5,7 @@ import HeaderHome from '../header/HeaderHome';
 import Footer from '../footer/Footer';
 
 const Home = () => (
-  <Fragment>
+  <>
     <MetaTags>
       <title>Tiles & Wares: Kovad Ceramics</title>
       <meta
@@ -19,7 +19,7 @@ const Home = () => (
     <HeaderHome />
     <BodyHome />
     <Footer />
-  </Fragment>
+  </>
 );
 
 export default Home;

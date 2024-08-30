@@ -8,11 +8,11 @@ import Navbar from '../navbar/Navbar';
 
 const HeaderGeneral = ({ image, text }) => {
   const headerStyle = {
-    backgroundImage: `url(${image})`
+    backgroundImage: `url(${image})`,
   };
 
   return (
-    <Fragment>
+    <>
       <header>
         <Navbar />
         <div className="header-container">
@@ -21,13 +21,13 @@ const HeaderGeneral = ({ image, text }) => {
           </div>
         </div>
       </header>
-    </Fragment>
+    </>
   );
 };
 
 HeaderGeneral.propTypes = {
   image: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired
+  text: PropTypes.string.isRequired,
 };
 
 export default HeaderGeneral;

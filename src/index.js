@@ -1,5 +1,5 @@
 import React from 'react';
-import { hydrateRoot, render, createRoot } from 'react-dom/client';
+import { hydrateRoot, createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import StoreProvider from './contextStore/StoreProvider';
 import App from './App';
@@ -7,35 +7,31 @@ import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 import './index.css';
 
-/* const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-); */
+const rootElement = document.getElementById('app');
 
-const rootElement = document.getElementById('root');
-const rootData = createRoot(rootElement);
-if (rootElement.hasChildNodes()) {
+if (rootElement && rootElement.hasChildNodes()) {
+  // If the root element has child nodes, it means the HTML was server-rendered.
   hydrateRoot(
     rootElement,
-    <React.Fragment>
+    <React.StrictMode>
       <StoreProvider>
         <BrowserRouter>
           <App tab="home" />
         </BrowserRouter>
       </StoreProvider>
-    </React.Fragment>
+    </React.StrictMode>
   );
 } else {
-  rootData.render(
-    <React.Fragment>
+  // Otherwise, create a new root and render.
+  const root = createRoot(rootElement);
+  root.render(
+    <React.StrictMode>
       <StoreProvider>
         <BrowserRouter>
-          <App />
+          <App tab="home" />
         </BrowserRouter>
       </StoreProvider>
-    </React.Fragment>
+    </React.StrictMode>
   );
 }
 
@@ -44,4 +40,3 @@ if (rootElement.hasChildNodes()) {
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 serviceWorker.unregister();
-// rootData.unmount();
